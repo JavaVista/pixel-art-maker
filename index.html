@@ -17,8 +17,9 @@
         <input type="submit" value="Make grid">
     </form>
 
-    <h2>Pick a color</h2>
-    <input type="color" id="colorPicker" value="#000000">
+    <h2>Pick two colors</h2>
+    <label for="colorPicker1">left</label> and <label for="colorPicker2">right-click:</label>
+    <input type="color" id="colorPicker1" value="#000000"><input type="color" id="colorPicker2" value="#ffffff">
 
     <h2>Design canvas</h2>
     <table id="pixel_canvas"></table>
@@ -26,7 +27,8 @@
         <input type="checkbox" id="show-grid" name="grid-border" value="lines-on" checked>
         <label for="show-grid">gridlines</label>
     </div>
-
+    <a id="download" class="hidden"><button type="button" id="export">Export image</button></a>
+    <canvas id="canvas" width="1" height="1" class="hidden"></canvas>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="designs.js"></script>
 </body>

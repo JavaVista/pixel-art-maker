@@ -42,7 +42,8 @@ input[type=number] {
     width: 6em;
 }
 
-input[type=submit] {
+input[type=submit],
+button {
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
     font-weight: 500;
@@ -56,4 +57,8 @@ input[type=submit] {
 
 .hidden {
     visibility: hidden;
+}
+
+#gridlines {
+    padding: 0 0 0.5em;
 }
