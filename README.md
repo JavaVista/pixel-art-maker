@@ -1,6 +1,8 @@
 # Pixel Art Maker
 ### JQuery Project for Udacity frontend course
 
+\>\> [Try it out!](https://zbianca.github.io/pixel-art-maker/index.html)
+
 Users should be able to:
 1. Dynamically set the size of the table as an N by M grid.
 1. Choose a color.
