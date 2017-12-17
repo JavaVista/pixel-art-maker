@@ -1,0 +1,59 @@
+body {
+    background-color: #eee;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Flamenco", cursive;
+    font-size: 70px;
+    margin: 0.5em;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #767676;
+}
+
+table {
+    background-color: #fff;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+input[type=submit] {
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    height: 32px;
+    padding: 0 16px;
+}
+
+.no-border {
+    border: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
