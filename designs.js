@@ -4,9 +4,9 @@ let pixelData = [];
 // Generate table and add rows-arrays to pixelData
 function makeGrid(rows, cols) {
     $('#pixel_canvas').empty();
-    for (var row = 0; row < rows; row++) {
+    for (let row = 0; row < rows; row++) {
         let addTr = '<tr>';
-        for (var col = 0; col < cols; col++) {
+        for (let col = 0; col < cols; col++) {
             addTr += '<td data-x="' + row + '" data-y="' + col + '"></td>';
         }
         addTr += '</tr>';
@@ -57,7 +57,8 @@ $(function () { // Document is ready
     });
 
     // On table cell click or click && drag, call paint()
-    $('#pixel_canvas').mousedown('td', function (event) {
+    $('#pixel_canvas')
+        .mousedown('td', function (event) {
             event.preventDefault();
             isDown = true; // Mouse down
             let cell = event.target.closest('td');
@@ -83,17 +84,17 @@ $(function () { // Document is ready
         $('#pixel_canvas tr, #pixel_canvas td').toggleClass('no-border');
     });
 
-    var setCanvas = function(w, h) {
+    const setCanvas = function (w, h) {
         $('#canvas').attr("width", w);
         $('#canvas').attr("height", h)
     };
 
-    var dataToCanvas = function(w, h) {
+    const dataToCanvas = function (w, h) {
         let canvas = document.getElementById('canvas');
         $ctx = canvas.getContext('2d');
         $ctx.clearRect(0, 0, w, h);
-        for (var x = 0; x < h; x++) {
-            for (var y = 0; y < w; y++) {
+        for (let x = 0; x < h; x++) {
+            for (let y = 0; y < w; y++) {
                 let hex = pixelData[x][y];
                 $ctx.fillStyle = hextoRGBA(hex);
                 $ctx.fillRect(y, x, 1, 1);
